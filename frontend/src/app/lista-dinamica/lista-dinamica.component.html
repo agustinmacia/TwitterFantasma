@@ -1,0 +1,12 @@
+  <div >
+    <ul>
+      <li *ngFor= "let persona of personas">
+        {{persona}}
+      </li>
+    </ul>
+  </div>
+
+  <div>
+      <input type="text" [(ngModel)]="personaNueva">
+      <button (click)="agregarPersona()"> Agregar </button>
+  </div>

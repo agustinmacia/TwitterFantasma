@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+      <div class="col-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Es Admin?</th>
+              <th></th>              
+            </tr>
+
+          </thead>
+          <tbody>
+            <tr *ngFor="let usuario of usuarios" (click)="modificarUsuario(usuario.id)">
+              <td>{{usuario.id}}</td>
+              <td>{{usuario.nombre}}</td>
+              <td>{{usuario.esAdmin}}</td>              
+              <td><button class="btn btn-danger" (click)="eliminarUsuario(usuario.id)">eliminar</button></td>
+            </tr>
+          </tbody>
+
+        </table>
+        <button class="btn btb-success" (click)="crearUsuario()"> crear usuario</button>
+      </div>
+      <div class="col-6">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>

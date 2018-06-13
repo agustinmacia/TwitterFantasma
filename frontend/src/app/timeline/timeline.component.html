@@ -1,0 +1,22 @@
+<h1>Timeline</h1>  
+
+
+  <div class="container-fluid">
+    <div class="col-4 offset-4">
+
+
+      <h1>Timeline</h1>
+      
+      <app-twittear (tweetCreado)="agregarTweet($event)"></app-twittear>
+
+      <div class="card" *ngFor="let t of tweets">
+          <div class="card-body">
+            <h5 class="card-title">{{t.autor.nombre}}</h5>
+            <p class="card-text">{{t.mensaje}}</p>
+            {{t.fecha}}
+            <a href="#" class="btn btn-primary">Favear</a>
+          </div>
+
+    </div>
+</div>
+

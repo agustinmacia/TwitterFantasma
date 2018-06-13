@@ -1,0 +1,8 @@
+
+<form action="" *ngIf="tweet" >
+  <div class="form-group">
+    <label for="mensaje"></label>
+    <textarea name="mensaje" id="mensaje" class="form-control" [(ngModel)]="tweet.mensaje"></textarea>
+  </div>
+  <button class="btn btn-primary" (click)="twittear()">¡Tweetear!</button>
+</form>
