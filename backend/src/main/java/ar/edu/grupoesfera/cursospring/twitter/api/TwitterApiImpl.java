@@ -92,7 +92,7 @@ public class TwitterApiImpl implements TwitterApi {
 	}
 	
 	@Override
-	public Response borrartUsuario(Usuario usuario) {
+	public Response borrarUsuario(Usuario usuario) {
 		usuarioService.borrarUsuario(usuario);
 		return Response.ok().build();
 	}

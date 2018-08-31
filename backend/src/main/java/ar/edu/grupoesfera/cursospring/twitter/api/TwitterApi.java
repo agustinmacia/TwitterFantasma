@@ -57,7 +57,7 @@ public interface TwitterApi {
     @DELETE
     @Path("/usuarios")
     @Produces(MediaType.APPLICATION_JSON)
-    Response borrartUsuario(Usuario usuario);
+    Response borrarUsuario(Usuario usuario);
     
     @GET
     @Path("/usuarios/{id}")
