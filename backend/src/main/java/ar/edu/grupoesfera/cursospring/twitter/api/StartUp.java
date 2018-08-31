@@ -19,8 +19,8 @@ public class StartUp implements ApplicationRunner{
 	@Override
 	public void run(ApplicationArguments argumentos) throws Exception{
 		Usuario usuario = new Usuario();
-		usuario.setNombre("LALTJ1");
-		usuario.setEmail("laltj1@gmail.com");
+		usuario.setNombre("AMR");
+		usuario.setEmail("amaciadelrio@gmail.com");
 		
 		this.usuarioRepository.save(usuario);
 		
